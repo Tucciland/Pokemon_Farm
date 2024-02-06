@@ -14,6 +14,7 @@ def verificar_imagem(img):
             if posicao is not None:
                 print(f'Imagem encontrada nas coordenadas {posicao}')
                 ATQ()
+                sleep(1)
             else:
                 print('Imagem não encontrada.')
                 movimento_circular()
@@ -28,11 +29,14 @@ def press_tecla(tecla, temp):
 
 
 def movimento_circular():
-    press_tecla('w', 0.2)  
-    press_tecla('d', 0.2)  
-    press_tecla('s', 0.2)  
-    press_tecla('a', 0.2)  
     sleep(0.5)
+    press_tecla('w', 0.2)
+    sleep(0.5)  
+    press_tecla('d', 0.2) 
+    sleep(0.5) 
+    press_tecla('s', 0.2) 
+    sleep(0.5)
+    press_tecla('a', 0.2)  
 
 
 sleep(2)

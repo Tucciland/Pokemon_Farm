@@ -4,7 +4,7 @@ import keyboard
 import sys
 
 def ATQ():
-    press_tecla('1', 1)
+    press_tecla('1', 1.7)
 
 
 def verificar_imagem(img):
@@ -14,7 +14,6 @@ def verificar_imagem(img):
             if posicao is not None:
                 print(f'Imagem encontrada nas coordenadas {posicao}')
                 ATQ()
-                sleep(1)
             else:
                 print('Imagem não encontrada.')
                 movimento_circular()
@@ -25,18 +24,15 @@ def verificar_imagem(img):
 def press_tecla(tecla, temp):
     keyboard.press(tecla)
     keyboard.release(tecla)
+    sleep(temp)
     print(tecla)
 
 
 def movimento_circular():
-    sleep(0.5)
-    press_tecla('w', 0.2)
-    sleep(0.5)  
-    press_tecla('d', 0.2) 
-    sleep(0.5) 
-    press_tecla('s', 0.2) 
-    sleep(0.5)
-    press_tecla('a', 0.2)  
+    press_tecla('w', 0.5)
+    press_tecla('d', 0.5) 
+    press_tecla('s', 0.5) 
+    press_tecla('a', 0.5)  
 
 
 sleep(2)

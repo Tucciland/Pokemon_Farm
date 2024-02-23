@@ -38,4 +38,4 @@ def movimento_circular():
 sleep(2)
 print('Iniciou')
 #ag.click(718,184, duration=1)
-verificar_imagem(r'img01.png')
+verificar_imagem(r'img\img01.png')
